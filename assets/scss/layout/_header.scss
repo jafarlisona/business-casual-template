@@ -1,0 +1,37 @@
+header {
+    height: 270px;
+    padding: 85px 0;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    position: relative;
+
+    h2 {
+        font-size: 32px;
+        color: #e6a756;
+        font-weight: 800;
+    }
+
+    h1 {
+        font-size: 80px;
+        color: #f6e1c5;
+        font-weight: 100;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width:320px) {
+    header {
+        height: 60px;
+        padding: 0;
+        display: block;
+        text-align: left;
+        position: static;
+        h2 {
+            display: none;
+        }
+
+        h1 {
+            display: none;
+        }
+    }
+}

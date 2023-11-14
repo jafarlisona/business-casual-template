@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("https://github.com/StartBootstrap/startbootstrap-business-casual/blob/master/dist/assets/img/bg.jpg?raw=true");
+  font-family: "Raleway", sans-serif;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.coffee {
+  padding: 160px 110px 0;
+  min-height: 900px;
+}
+.coffee .image img {
+  float: right;
+  max-width: 970px;
+  min-height: 650px;
+  border-radius: 7px;
+}
+.coffee .text {
+  height: 325px;
+  width: 585px;
+  background-color: #F6E1C5;
+  border-radius: 7px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 60px;
+  justify-content: space-between;
+  bottom: 600px;
+}
+.coffee .text span {
+  font-weight: 800;
+  color: #212529;
+}
+.coffee .text .title {
+  font-weight: 100;
+  font-size: 48px;
+}
+.coffee .text p {
+  padding: 15px 0;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.coffee .text button {
+  display: inline-block;
+  font-size: 14px;
+  box-shadow: 0px 3px 3px 0px rgba(33, 37, 41, 0.1);
+  width: 156px;
+  height: 69px;
+  border-radius: 7px;
+  border: none;
+  background-color: #E5AD63;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+  position: absolute;
+  bottom: -30px;
+  left: 215px;
+}
+.coffee .text button:hover {
+  background-color: #eab46f;
+}
+
+.promise {
+  background-color: rgba(230, 167, 86, 0.9);
+  padding: 80px 30px;
+  display: grid;
+  place-content: center;
+}
+.promise .border {
+  border: 4px solid #E5AD63;
+  padding: 4px;
+  max-width: 960px;
+  min-height: 297px;
+  border-radius: 10px;
+}
+.promise .border .content {
+  max-width: 943px;
+  min-height: 280px;
+  background-color: #f6e1c5;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 60px;
+  justify-content: space-between;
+}
+.promise .border .content span {
+  font-weight: 800;
+  color: #212529;
+}
+.promise .border .content .title {
+  font-weight: 100;
+  font-size: 48px;
+}
+.promise .border .content p {
+  padding: 15px 0;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+  .coffee {
+    padding: 80px 30px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .coffee .image img {
+    float: left;
+    max-width: 710px;
+    min-height: 350px;
+  }
+  .coffee .text {
+    min-height: 370px;
+    width: 710px;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    bottom: 600px;
+  }
+  .coffee .text button {
+    position: static;
+    align-self: center;
+  }
+  .promise .border {
+    max-width: 710px;
+    min-height: 347px;
+  }
+  .promise .border .content {
+    max-width: 693px;
+    min-height: 330px;
+  }
+}
+section {
+  padding: 160px 110px 260px;
+}
+section .img {
+  position: relative;
+}
+section .img img {
+  width: 1300px;
+  height: 485px;
+  border-radius: 7px;
+}
+section .img .about-content {
+  position: absolute;
+  top: 400px;
+  left: 160px;
+  width: 965px;
+  height: 350px;
+  background-color: #f6e1c5;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 60px;
+  justify-content: space-between;
+}
+section .img .about-content span {
+  font-weight: 800;
+  color: #212529;
+}
+section .img .about-content .title {
+  font-weight: 100;
+  font-size: 48px;
+}
+section .img .about-content p {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  gap: 30px;
+}
+section .img .about-content p span {
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+nav {
+  height: 85px;
+  background-color: rgba(47, 23, 15, 0.9019607843);
+  display: grid;
+  width: 100%;
+  position: absolute;
+  bottom: -85px;
+  place-content: center;
+}
+nav .nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 420px;
+}
+nav .nav ul li a {
+  color: rgba(255, 255, 255, 0.7019607843);
+  font-size: 15px;
+  font-weight: 800;
+}
+nav .menu {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+  nav {
+    height: 60px;
+    width: 100%;
+    position: static;
+  }
+  nav .nav {
+    display: none;
+  }
+  nav .menu {
+    display: block;
+    width: 730px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .menu p {
+    color: #E6A756;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  nav .menu .icon {
+    border: 1px solid rgba(161, 150, 147, 0.6862745098);
+    border-radius: 5px;
+  }
+  nav .menu .icon i {
+    color: #A19693;
+    font-size: 25px;
+    padding: 8px 15px;
+  }
+}
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+  nav {
+    height: 60px;
+    width: 100%;
+    position: static;
+  }
+  nav .nav {
+    display: none;
+  }
+  nav .menu {
+    display: block;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .menu p {
+    color: #E6A756;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  nav .menu .icon {
+    border: 1px solid rgba(161, 150, 147, 0.6862745098);
+    border-radius: 5px;
+  }
+  nav .menu .icon i {
+    color: #A19693;
+    font-size: 25px;
+    padding: 8px 15px;
+  }
+}
+header {
+  height: 270px;
+  padding: 85px 0;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  position: relative;
+}
+header h2 {
+  font-size: 32px;
+  color: #e6a756;
+  font-weight: 800;
+}
+header h1 {
+  font-size: 80px;
+  color: #f6e1c5;
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 320px) {
+  header {
+    height: 60px;
+    padding: 0;
+    display: block;
+    text-align: left;
+    position: static;
+  }
+  header h2 {
+    display: none;
+  }
+  header h1 {
+    display: none;
+  }
+}
+footer {
+  background-color: rgba(47, 23, 15, 0.9019607843);
+  height: 120px;
+  display: grid;
+  place-items: center;
+  margin-top: 80px;
+}
+footer p {
+  color: #f6e1c5;
+  font-family: "Times New Roman", Times, serif;
+}/*# sourceMappingURL=style.css.map */

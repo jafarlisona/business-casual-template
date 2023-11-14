@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+body{
+    background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)),url("https://github.com/StartBootstrap/startbootstrap-business-casual/blob/master/dist/assets/img/bg.jpg?raw=true");
+    font-family: 'Raleway', sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}

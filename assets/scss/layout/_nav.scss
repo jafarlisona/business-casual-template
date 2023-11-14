@@ -1,0 +1,96 @@
+nav {
+    height: 85px;
+    background-color: #2f170fe6;
+    display: grid;
+    width: 100%;
+    position: absolute;
+    bottom: -85px;
+    place-content: center;
+
+    .nav {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 420px;
+
+            li {
+                a {
+                    color: #ffffffb3;
+                    font-size: 15px;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width:425px) {
+    nav {
+        height: 60px;
+        width: 100%;
+        position: static;
+        .nav {
+            display: none;
+        }
+        .menu{
+            display: block;
+            width: 730px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p{
+                color: #E6A756;
+                font-weight: 700;
+                font-size: 20px;
+            }
+            .icon{
+                border: 1px solid #a19693af;
+                border-radius: 5px;
+                i{
+                    color:#A19693 ;
+                    font-size: 25px;
+                    padding: 8px 15px;
+                }
+            }
+        }
+    }
+
+
+}
+@media only screen and (max-width: 425px) and (min-width:320px) {
+    nav {
+        height: 60px;
+        width: 100%;
+        position: static;
+        .nav {
+            display: none;
+        }
+        .menu{
+            display: block;
+            width: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p{
+                color: #E6A756;
+                font-weight: 700;
+                font-size: 20px;
+            }
+            .icon{
+                border: 1px solid #a19693af;
+                border-radius: 5px;
+                i{
+                    color:#A19693 ;
+                    font-size: 25px;
+                    padding: 8px 15px;
+                }
+            }
+        }
+    }
+
+
+}

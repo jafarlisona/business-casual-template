@@ -1,0 +1,47 @@
+section {
+    padding: 160px 110px 260px;
+    .img {
+        position: relative;
+        img {
+            width: 1300px;
+            height: 485px;
+            border-radius: 7px;
+        }
+
+        .about-content {
+            position: absolute;
+            top: 400px;
+            left: 160px;
+            width: 965px;
+            height: 350px;
+            background-color: #f6e1c5;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            padding: 50px 60px;
+            justify-content: space-between;
+
+            span {
+                font-weight: 800;
+                color: #212529;
+            }
+
+            .title {
+                font-weight: 100;
+                font-size: 48px;
+            }
+
+            p {
+                display: flex;
+                flex-direction: column;
+                padding: 15px 0;
+                gap: 30px;
+                span {
+                    line-height: 30px;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
